@@ -1,6 +1,6 @@
 ## Multi-Template Meta-Information Regularized Network for Alzheimer’s Disease Diagnosis Using Structural MRI<br><sub>Official PyTorch Implementation</sub> 
 ### [Paper](https://ieeexplore.ieee.org/document/10365189) 
-[Framework](/framework.pdf)
+<a href="/framework.pdf" class="image fit"><img src="images/marr_pic.jpg" alt=""></a>
 ## Template Seclection
 
 ### Affine Registration
