@@ -6,7 +6,7 @@ import  argparse
 
 args = argparse.ArgumentParser()
 args.add_argument('--Dataset', default='ADNI') # Preprocessed Data from ADNI
-args.add_argument('--Task', default='ADNC') # ADNC, pMCIsMCI
+args.add_argument('--Task', default='ADNC') # ADNC, MCIc
 args.add_argument('--Filters', default= [16, 32, 64, 96, 80, 64])
 args.add_argument('--Batch_size', default= 6)
 args.add_argument('--Latent', default= 64)
