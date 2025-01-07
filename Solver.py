@@ -9,8 +9,7 @@ import torch.optim as optim
 from torch.utils.tensorboard import SummaryWriter
 from tqdm import tqdm
 
-from model import (CLUBSample, Classifier, Discriminator, Disentanglement, Encoder,
-                   Generator, Projection, Reconstruction)
+from model import *
 from utils import *
 
 
