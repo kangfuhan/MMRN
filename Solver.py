@@ -271,7 +271,7 @@ class Solver():
                 for image in images:
                     feat = self.E(image.to(self.device))
                     dis  = self.D(feat)[0]
-                    out = self.C(dis[:, :64])
+                    out = self.C(dis)
 
                     cls_loss += self.xent_loss(out, label).item()
                     pre = out.data.max(1)[1]
