@@ -125,7 +125,7 @@ def ToPickle(excel_data, data = 'ADNI'):
     for s in range(excel_data.shape[0]):
         
         pkl_path = Base_Dir + '/Data/'
-        nii_dir = Base_Dir + data + '-Flirt/'
+        nii_dir = Base_Dir + '/' + data + '-Flirt/'
         
         if data == 'NACC':
             Label   = excel_data.NACCUDSD[s]
