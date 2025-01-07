@@ -84,9 +84,9 @@ class LONI_Loader(Dataset):
             label = Categorical_list[str(self.task_num_classes)][str(label)]
         # print(label)
         label = torch.from_numpy(np.ascontiguousarray(label))
-        Age = torch.from_numpy(np.ascontiguousarray((Age - 55.1)/(91.5 - 55.1))).float()
+        Age = torch.from_numpy(np.ascontiguousarray((Age - 55.1)/(91.5 - 55.1))).float() # Min-Max Normalization
         Gender = torch.from_numpy(np.ascontiguousarray(Gender)).long()
-        Edu = torch.from_numpy(np.ascontiguousarray((Edu - 4)/(20 - 4))).float()
+        Edu = torch.from_numpy(np.ascontiguousarray((Edu - 4)/(20 - 4))).float() # Min-Max Normalization
         RID = torch.from_numpy(np.ascontiguousarray(RID)).float()
         
         if self.mode == 'train':
