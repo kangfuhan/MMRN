@@ -145,15 +145,15 @@ class CLUBSample(nn.Module):  # Sampled version of the CLUB estimator
     Code from https://github.com/Linear95/CLUB
     CLUB: A Contrastive Log-ratio Upper Bound of Mutual Information, ICML 2020
     """
-    def __init__(self, x_dim = args.Latent, y_dim = args.Latent, hidden_size = args.Latent//2):
+    def __init__(self, x_dim = args.Latent, y_dim = args.Latent, hidden_size = args.Latent//4):
         super(CLUBSample, self).__init__()
-        self.p_mu = nn.Sequential(nn.Linear(x_dim, hidden_size//2),
+        self.p_mu = nn.Sequential(nn.Linear(x_dim, hidden_size),
                                        nn.ReLU(),
-                                       nn.Linear(hidden_size//2, y_dim))
+                                       nn.Linear(hidden_size, y_dim))
 
-        self.p_logvar = nn.Sequential(nn.Linear(x_dim, hidden_size//2),
+        self.p_logvar = nn.Sequential(nn.Linear(x_dim, hidden_size),
                                        nn.ReLU(),
-                                       nn.Linear(hidden_size//2, y_dim),
+                                       nn.Linear(hidden_size, y_dim),
                                        nn.Sigmoid()) # The original activation function is nn.Tanh(), please see https://github.com/Linear95/CLUB/issues/12#issuecomment-897361330
 
     def get_mu_logvar(self, x_samples):
