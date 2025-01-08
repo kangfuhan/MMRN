@@ -28,7 +28,7 @@ python test.py
 To train the model with personalized parameters (such as classification weight $\alpha$ as 0.3 in the task of AD vs. NC Classification), run:
 ```bash
 python train.py --para 0.3 --Task ADNC
-python test.py --Task ADNC
+python test.py --para 0.3 --Task ADNC
 ```
 
 ## Datasets
