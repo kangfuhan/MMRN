@@ -36,7 +36,7 @@ python test.py --Task ADNC
 [NACC](https://naccdata.org/)
 
 ## BibTeX
-
+Please cite this paper if using the code.
 ```bibtex
 @ARTICLE{10365189,
   author={Han, Kangfu and Li, Gang and Fang, Zhiwen and Yang, Feng},
