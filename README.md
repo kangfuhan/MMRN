@@ -31,10 +31,6 @@ python train.py --para 0.3 --Task ADNC
 python test.py --para 0.3 --Task ADNC
 ```
 
-## Datasets
-[ADNI](https://ida.loni.usc.edu)
-[NACC](https://naccdata.org/)
-
 ## BibTeX
 Please cite this paper if using the code.
 ```bibtex
